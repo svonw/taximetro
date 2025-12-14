@@ -5,11 +5,11 @@ from trip_recorder import save_trips
 from hours_calculator import create_calculator
 
 
-def taximeter():
+def main():
     '''
     funcion para las opciones del taximetro
     '''
-    print("welcome to F5 taximeter")
+    print("\n welcome to F5 taximeter")
     print("Available commands: 'start','stop','move', 'finish', 'exit'\n")
 
 
@@ -38,3 +38,8 @@ def taximeter():
 
         else:
             print("Unknown command. Use: start, stop, move, finish, or exit.")
+
+
+
+if __name__ == "__main__":
+    main()

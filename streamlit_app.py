@@ -85,7 +85,7 @@ with tab1:
         st.info("Inicia un viaje para ver la tarifa")
 
 
-
+ # Pestaña 2
 with tab2:
     st.title("Histórico de Viajes")
 
