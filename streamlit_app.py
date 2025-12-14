@@ -63,7 +63,7 @@ with tab1:
         if st.button("❌ EXIT", type="secondary", use_container_width=True, disabled=not st.session_state.get('started', False)):
             st.warning("TAXÍMETRO APAGADO")
             st.session_state.started = False
-            st.stop()
+            st.rerun()
 
     st.divider()
 

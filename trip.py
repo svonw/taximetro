@@ -37,9 +37,9 @@ class Trip:
         duration = math.ceil(time.time() - cls.state_start_time)
 
         if command == "stop":
-            cls.stopped_time += duration
-        else:
             cls.moving_time += duration
+        else:
+            cls.stopped_time += duration
 
         cls.state = 'stopped' if command == "stop" else 'moving'
         cls.state_start_time = time.time()
